@@ -1,0 +1,66 @@
+<div class="row mt-5">
+    <div class="col-12 mt-5">
+        <div class="card shadow mt-5">
+            <div class="card-header">
+                <div class="card-title">
+                    <div class="row">
+                        <div class="col-12 col-md-10">
+                            <h4 class="text-dark">
+                                Gerenciar compradores
+                            </h4>
+                        </div>
+                        <div class="col-12 col-md-2">
+                            <button class="btn btn-dark btn-block btn-novo">
+                                Adicionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="table-tipo">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col" class="text-center">ID</th>
+                                    <th scope="col" class="text-center">NOME</th>
+                                    <th scope="col" class="text-center">CELULAR</th>
+                                    <th scope="col" class="text-center">AÇÕES</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">01</td>
+                                    <td class="text-center">Miguel</td>
+                                    <td class="text-center">1499999999</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-tipo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="my-modal-title">Title</h5>
+                <button class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Content</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal" aria-label="Close"><i class="fa-solid fa-circle-xmark"></i> Fechar</button>
+                <button class="btn btn-primary btn-salvar"><i class="fa-solid fa-floppy-disk"></i> Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="src/comprador/controle/novo-comprador.js"></script>
+<script src="src/comprador/controle/salvar-comprador.js"></script>

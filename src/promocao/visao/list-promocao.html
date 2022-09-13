@@ -1,0 +1,68 @@
+<div class="row mt-5">
+  <div class="col-12 mt-5">
+      <div class="card shadow mt-5">
+          <div class="card-header">
+              <div class="card-title">
+                  <div class="row">
+                      <div class="col-12 col-md-10">
+                          <h4 class="text-dark">
+                              Gerenciar promoções
+                          </h4>
+                      </div>
+                      <div class="col-12 col-md-2">
+                          <button class="btn btn-dark btn-block btn-novo">
+                              Adicionar
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="card-body">
+                  <div class="table-responsive">
+                      <table class="table table-hover" id="table-promocao">
+                          <thead class="thead-dark">
+                              <tr>
+                                  <th scope="col" class="text-center">ID</th>
+                                  <th scope="col" class="text-center">Titulo</th>
+                                  <th scope="col" class="text-center">Descrição</th>
+                                  <th scope="col" class="text-center">Data de inicio</th>
+                                  <th scope="col" class="text-center">Data de fim</th>
+                                  <th scope="col" class="text-center">Data do sorteio</th>
+                                  <th scope="col" class="text-center">Valor da rifa</th>
+                                  <th scope="col" class="text-center">Valor arrecadado</th>
+                                  <th scope="col" class="text-center">Ações</th>
+                              </tr>
+                          </thead>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div id="modal-promocao" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="my-modal-title">Title</h5>
+              <button class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <p>Content</p>
+          </div>
+          <div class="modal-footer">
+              <button class="btn btn-secondary" data-dismiss="modal" aria-label="Close"><i class="fa-solid fa-circle-xmark"></i> Fechar</button>
+              <button class="btn btn-primary btn-salvar"><i class="fa-solid fa-floppy-disk"></i> Salvar</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="src/promocao/controle/novo-promocao.js"></script>
+<script src="src/promocao/controle/list-promocao.js"></script>
+<script src="src/promocao/controle/salvar-promocao.js"></script>
+<script src="src/promocao/controle/view-promocao.js"></script>
+<script src="src/promocao/controle/edit-promocao.js"></script>
+<script src="src/promocao/controle/delete-promocao.js"></script>
