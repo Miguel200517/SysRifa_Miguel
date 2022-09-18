@@ -1,17 +1,17 @@
 $(document).ready(function(){
-    $('.btn-salvar').click(function(e){
+    $('.btn-save').click(function(e){
         e.preventDefault()
 
     let dados = $('#form-vendedor').serialize()
 
-    dados += `&operacao=${$('.btn-salvar').attr('data-operation')}`
+    dados += `&operacao=${$('.btn-save').attr('data-operation')}`
 
     $.ajax({
         type: 'POST',
         dataType: 'JSON',
         assync: true,
         data: dados,
-        url: 'src/vendedor/modelo/salvar-vendedor.php',
+        url: 'src/vendedor/modelo/save-vendedor.php',
         success: function(dados){
             Swal.fire({
                 title: 'SysRifa',

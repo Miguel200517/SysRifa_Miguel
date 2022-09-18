@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.btn-novo').click(function(event){
+    $('.btn-new').click(function(event){
         event.preventDefault()
 
        //Limpar todas as informações já existentes em nossa modal
