@@ -25,9 +25,9 @@ $(document).ready(function(){
        })
 
        //Iremos incluir uma função no botão salvar para demonstrar que é um novo registro
-       $('.btn-salvar').attr('data-operation', 'insert')
+       $('.btn-save').attr('data-operation', 'insert')
 
        //Abrir nossa janela modal
-       $('#modal-promocao').modal('show')
+       $('#modal-vendedor').modal('show')
     })
 })
